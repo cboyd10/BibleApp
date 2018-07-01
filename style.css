@@ -1,0 +1,98 @@
+body {
+	 margin: 0; 
+	 padding: 0; 
+     background-color: DodgerBlue;
+	 background-size: cover;
+	 background-position: center;
+     font-family: sans-serif;
+}
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: dodgerblue;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+
+}
+.bible{
+    width: 110px;
+    height: 110px;
+    border-radius: 0;
+    position: absolute;
+    top: -55px;
+    left: calc(45% - 40px);
+}
+h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 25px;
+
+}
+h6{
+    margin: 0;
+    padding: -50px -50px -50px;
+    text-align: center;
+    font-size: 12px;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.user{
+    opacity: 1;
+    position: relative;
+    top: 28px;
+    left: 9px;
+    width: 18px;
+    height: 18px;
+}
+.loginbox input[type="text"], input[type="username"]
+{
+    text-indent: 40px;
+}
+.lock{
+    opacity: 1;
+    position: relative;
+    top: 33px;
+    left: 8px;
+    width: 25px;
+    height: 28px;
+}
+.loginbox input[type="text"], input[type="password"]
+{
+    border: 20px #1f5377;
+    border-radius: 5px;
+    background-color: rgb(10, 122, 233);
+    color: white;
+    outline: none;
+    text-indent: 40px;
+    height: 40px;
+    font-size: 14px;
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background:#fff;
+    color: DodgerBlue;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: blue;
+    color: white;
+}
+a
+{
+    color: white;
+    font-size: 14px;
+}
