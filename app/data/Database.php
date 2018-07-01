@@ -6,7 +6,8 @@
  * Time: 10:47 PM
  */
 
-define('__ROOT__', $_SERVER['DOCUMENT_ROOT']);
+//define('__ROOT__', $_SERVER['DOCUMENT_ROOT']);
+define('__ROOT__', dirname(dirname(dirname(__FILE__))));
 require_once(__ROOT__ . '/app/config/config.php');
 
 class Database extends mysqli
@@ -39,11 +40,11 @@ class Database extends mysqli
 
     public function runQuery($query)
     {
-        if ($this->query($query)) {
-            return true;
+        if ($query == "" || !$this->query($query)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     public function getResults($query)

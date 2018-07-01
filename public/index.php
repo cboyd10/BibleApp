@@ -11,5 +11,6 @@ require_once(__ROOT__ . '/app/config/config.php');
 require_once(__HEADER__);
 
 // Put index.php content here
+?> Test<?php
 
 require_once(__FOOTER__);
