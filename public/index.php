@@ -6,7 +6,7 @@
  * Time: 3:06 PM
  */
 
-define('__ROOT__', dirname(dirname(__FILE__)));
+define('__ROOT__', $_SERVER['DOCUMENT_ROOT']);
 require_once(__ROOT__ . '/app/config/config.php');
 require_once(__HEADER__);
 
